@@ -16,6 +16,18 @@ body {
     background-color: #0A1128;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+}
+
 /* Header component */
 
 header {
@@ -65,7 +77,6 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    background-color: #0A1128;
     background-image: url(images/hero.jpg);
     background-size: cover;
 }
@@ -73,7 +84,6 @@ nav a:hover {
 #hero h1 {
     margin: 10rem 0rem 0rem;
     color: #FEFCFB;
-    font-size: 2.5rem;
     font-weight: 600;
 }
 
@@ -82,8 +92,7 @@ nav a:hover {
     padding: 1rem;
     color: #02040F;
     text-align: center;
-    font-size: 1.2rem;
-    background-color: hwb(20 98% 0% / 0.8);
+    background-color: hwb(20 98% 0% / 0.7);
     border-radius: 0.5rem;
 }
 
@@ -104,4 +113,78 @@ nav a:hover {
 
 .button:visited {
     color: #02040F;
+}
+
+/* Main component */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FEFCFB;
+}
+
+main h2 {
+    margin: 2rem 0rem;
+    font-size: 1.5rem;
+}
+
+main a {
+    border: 1px solid #0A1128;
+    width: 50%;
+    padding: 5rem 1rem 1rem 1rem;
+    margin: 0rem 0rem 3rem 0rem;
+    border-radius: 0.5rem;
+    border: none;
+    text-decoration: none;
+    transition: 400ms;
+}
+
+main a article h3, h4 {
+    color: #FEFCFB;
+}
+
+.blog-1 {
+    background-color: hsl(209, 95%, 24%);
+}
+
+.blog-2 {
+    background-color: hsl(300, 62%, 68%);
+}
+
+.blog-3 {
+    background-color: hsl(40, 97%, 64%);
+}
+
+.blog-4 {
+    background-color: hsl(157, 46%, 49%);
+}
+
+.blog-5 {
+    background-color: hsl(1, 80%, 68%);
+}
+
+main a:hover {
+    translate: 0 -5px;
+}
+
+.blog-1:hover {
+    background-color: hsl(209, 95%, 28%);
+}
+
+.blog-2:hover {
+    background-color: hsl(300, 62%, 72%);
+}
+
+.blog-3:hover {
+    background-color: hsl(40, 97%, 68%);
+}
+
+.blog-4:hover {
+    background-color: hsl(157, 46%, 53%);
+}
+
+.blog-5:hover {
+    background-color: hsl(1, 80%, 72%);
 }
