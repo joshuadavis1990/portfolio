@@ -1,0 +1,54 @@
+/* Google Fonts import (Poppins and Volkhov) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Volkhov:ital@0;1&display=swap');
+
+/* CSS Reset */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400; 
+}
+
+/* Header component */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.3rem;
+    background-color: #0A1128;
+    padding: 1rem 1.5rem 1rem 1rem;
+    border-bottom: solid 1px #FEFCFB;
+}
+
+header a {
+    display: flex;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 100px;
+}
+
+header nav a {
+    text-decoration: none;
+    color: #FEFCFB;
+    padding: 0rem 0rem 0rem 1.5rem;
+    transition: 400ms;
+}
+
+nav a:visited {
+    color: #FEFCFB;
+}
+
+nav a:hover {
+    color: #1282A2;
+}
