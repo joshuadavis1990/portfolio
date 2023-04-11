@@ -1,6 +1,6 @@
 /* Google Fonts import (Poppins and Volkhov) */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Volkhov:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro:wght@700&family=Volkhov:ital@0;1&display=swap');
 
 /* CSS Reset */
 
@@ -26,6 +26,24 @@ h2 {
 
 h3 {
     font-size: 1.2rem;
+}
+
+@keyframes color-cycle {
+    0% {
+        color: hsl(209, 95%, 48%);
+    }
+    25% {
+        color: hsl(300, 62%, 68%);
+    }
+    50% {
+        color: hsl(40, 97%, 68%);
+    }
+    75% {
+        color: hsl(157, 46%, 53%);
+    }
+    100% {
+        color: hsl(1, 80%, 72%);
+    }
 }
 
 /* Header component */
@@ -79,20 +97,22 @@ nav a:hover {
     width: 100%;
     background-image: url(images/hero.jpg);
     background-size: cover;
+    background-color: grey;
+    background-blend-mode: multiply;
 }
 
 #hero h1 {
     margin: 10rem 0rem 0rem;
     color: #FEFCFB;
-    font-weight: 600;
+    font-family: "Source Code Pro", Courier, monospace;
+    animation: 75s infinite alternate color-cycle;
 }
 
 #hero h2 {
     margin: 1rem 0rem 0rem 0rem;
     padding: 1rem;
-    color: #02040F;
+    color: #FEFCFB;
     text-align: center;
-    background-color: hwb(20 98% 0% / 0.7);
     border-radius: 0.5rem;
 }
 
