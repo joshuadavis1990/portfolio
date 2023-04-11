@@ -50,6 +50,10 @@ h3 {
 
 header {
     display: flex;
+    /* position: fixed;
+    z-index: 1;
+    top: 0; */
+    width: 100%;
     font-size: 1.3rem;
     background-color: #0A1128;
     padding: 1rem;
@@ -95,7 +99,6 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 70vh;
     background-image: url(images/hero.jpg);
     background-size: cover;
     background-color: grey;
@@ -221,7 +224,7 @@ main a:hover {
 }
 
 #social-links h2 {
-    margin: 2rem 0rem;
+    margin: 3rem 0rem 0.5rem;
     font-size: 1.5rem;
     color: #1282A2;
 }
@@ -230,7 +233,7 @@ main a:hover {
     display: flex;
     justify-content: center;
     width: 75%;
-    padding: 0rem 0rem 1rem 0rem;
+    margin: 0rem 0rem 3rem;
 }
 
 #social-links a {
@@ -242,4 +245,14 @@ main a:hover {
 #social-links img {
     width: 50%;
     object-fit: contain;
+}
+
+/* Footer/copyright component */
+
+footer {
+    text-align: center;
+    background-color: #1282A2;
+    color: #FEFCFB;
+    font-size: 0.8rem;
+    padding: 0.5rem;
 }
