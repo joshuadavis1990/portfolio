@@ -156,10 +156,9 @@ main h2 {
   font-size: 1.5rem;
 }
 
-main a {
-  border: 1px solid #0a1128;
-  width: 50%;
-  padding: 5rem 1rem 1rem 1rem;
+.blog-1, .blog-2, .blog-3, .blog-4, .blog-5 {
+  width: 60%;
+  padding: 8rem 1rem 1rem 1rem;
   margin: 0rem 0rem 3rem 0rem;
   border-radius: 0.5rem;
   border: none;
