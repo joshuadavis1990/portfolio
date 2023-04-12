@@ -114,7 +114,7 @@ nav a:hover {
 #social-links nav {
   display: flex;
   justify-content: center;
-  width: 250px;
+  width: 80%;
   margin: 0rem 0rem 3rem;
 }
 
@@ -125,12 +125,13 @@ nav a:hover {
 }
 
 #social-links img {
-  width: 50%;
+  width: 60%;
   object-fit: contain;
+  filter: invert(5%);
 }
 
 #social-links img:hover {
-  translate: 0 -1px;
+  filter: invert(0%);
   transition: 200ms;
 }
 
