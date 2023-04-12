@@ -1,4 +1,4 @@
-/* Google Fonts import (Poppins and Volkhov) */
+/* Google Fonts import */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&family=Source+Code+Pro:wght@700&family=Volkhov:ital@0;1&display=swap");
 
@@ -110,7 +110,7 @@ nav a:hover {
   margin: 10rem 0rem 0rem;
   color: #fefcfb;
   font-family: "Source Code Pro", Courier, monospace;
-  animation: 75s infinite alternate color-cycle;
+  animation: 20s infinite alternate color-cycle;
 }
 
 #hero h2 {
