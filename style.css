@@ -162,13 +162,21 @@ main h2 {
 .blog-3,
 .blog-4,
 .blog-5 {
-  width: 60%;
-  padding: 8rem 1rem 1rem 1rem;
-  margin: 0rem 0rem 3rem 0rem;
+  width: 15rem;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  margin: 0rem 0rem 2.5rem 0rem;
   border-radius: 0.5rem;
-  border: none;
   text-decoration: none;
   transition: 400ms;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main h4 {
+    font-size: 0.8rem;
 }
 
 main a article h3,
@@ -178,27 +186,22 @@ h4 {
 
 .blog-1 {
   background-color: hsl(209, 95%, 24%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog-2 {
   background-color: hsl(300, 62%, 68%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog-3 {
   background-color: hsl(40, 97%, 64%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog-4 {
   background-color: hsl(157, 46%, 49%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog-5 {
   background-color: hsl(1, 80%, 68%);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .blog-posts a:hover {
@@ -347,7 +350,7 @@ ul {
 /* Styling for individual blog pages */
 
 strong {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .abstract {
