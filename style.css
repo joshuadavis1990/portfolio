@@ -22,6 +22,7 @@ h1 {
 
 h2 {
   font-size: 1.5rem;
+  font-weight: 600;
 }
 
 h3 {
@@ -156,7 +157,11 @@ main h2 {
   font-size: 1.5rem;
 }
 
-.blog-1, .blog-2, .blog-3, .blog-4, .blog-5 {
+.blog-1,
+.blog-2,
+.blog-3,
+.blog-4,
+.blog-5 {
   width: 60%;
   padding: 8rem 1rem 1rem 1rem;
   margin: 0rem 0rem 3rem 0rem;
@@ -335,6 +340,27 @@ ul {
 }
 
 .resume-button:hover {
-    background-color: hsl(193, 100%, 35%);
-    transition: 400ms;
-  }
+  background-color: hsl(193, 100%, 35%);
+  transition: 400ms;
+}
+
+/* Styling for individual blog pages */
+
+strong {
+    font-weight: 600;
+}
+
+.abstract {
+  text-align: center;
+  width: 75%;
+}
+
+.author {
+  color: #0a1128;
+  font-size: 0.8rem;
+  padding: 1rem 0rem 2rem;
+}
+
+.blog-image {
+  width: 100%;
+}
