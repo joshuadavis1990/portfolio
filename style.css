@@ -189,7 +189,7 @@ main a article h3, h4 {
     background-color: hsl(1, 80%, 68%);
 }
 
-main a:hover {
+.blog-posts a:hover {
     translate: 0 -5px;
 }
 
