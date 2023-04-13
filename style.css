@@ -38,7 +38,7 @@ h3 {
 }
 
 h4 {
-    font-size: 0.8rem;
+  font-size: 0.8rem;
 }
 
 /* UNIVERSAL STYLING */
@@ -367,7 +367,7 @@ ol {
 
 strong {
   font-weight: 600;
-  color: #1282A2;
+  color: #1282a2;
 }
 
 .abstract {
@@ -458,7 +458,7 @@ strong {
 
 /* Landscape tablet styles */
 
-@media  screen and (min-width: 1000px) {
+@media screen and (min-width: 1000px) {
   header > a {
     width: 8%;
   }
@@ -470,9 +470,8 @@ strong {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    width: 75%
+    width: 75%;
   }
-  
   .blog-1,
   .blog-2,
   .blog-3,
@@ -493,7 +492,9 @@ strong {
   }
   .blog-image {
     width: 40%;
-    border-radius: 1rem;
+  }
+  .abstract {
+    width: 35%;
   }
 }
 
@@ -522,7 +523,19 @@ strong {
     margin: 1rem 1rem 12rem 2rem;
   }
   header {
-    padding: 2rem 3rem 2rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
   }
-  
+  .content {
+    padding: 1.5rem 25rem;
+  }
+  .profile {
+    width: 20%;
+  }
+  .blog-image {
+    width: 30%;
+  }
+  .abstract {
+    width: 25%;
+  }
+}
 /* Desktop styles */
