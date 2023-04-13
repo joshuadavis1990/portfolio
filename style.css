@@ -387,6 +387,13 @@ ol {
   width: 80%;
 }
 
+.boxed-text div {
+  background-color: hsl(226, 1%, 93%);
+  margin: 1rem 1rem 2rem;
+  padding: 0.1rem;
+  border-radius: 0.5rem;
+}
+
 /* Styling for individual blog pages */
 
 strong {
