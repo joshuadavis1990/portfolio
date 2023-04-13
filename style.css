@@ -22,7 +22,7 @@ body {
 }
 
 #hero h1 {
-  margin: 10rem 0rem 0rem;
+  margin: 12rem 0rem 0rem;
   padding: 0rem 1rem;
   font-size: 3rem;
   font-family: "Source Code Pro", Courier, monospace;
@@ -48,9 +48,6 @@ h4 {
 
 header {
   display: flex;
-  /* position: fixed;
-    z-index: 1;
-    top: 0; */
   width: 100%;
   background-color: #0a1128;
   padding: 1rem 2rem 1rem 1rem;
@@ -127,7 +124,7 @@ nav a:hover {
 #social-links img {
   width: 60%;
   object-fit: contain;
-  filter: invert(5%);
+  filter: invert(10%);
 }
 
 #social-links img:hover {
@@ -174,7 +171,6 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 90vh;
   background-image: url(images/hero.jpg);
   background-size: cover;
   background-color: grey;
@@ -194,8 +190,9 @@ footer {
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
-  margin: 1rem 1rem 10rem 1rem;
+  margin: 1rem 1rem 12rem 1rem;
   font-size: 1.2rem;
+  font-weight: 600;
   text-align: center;
   color: #02040f;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -324,6 +321,7 @@ em {
 
 .content a {
   color: #1282a2;
+  text-decoration: none;
 }
 
 .profile {
@@ -354,6 +352,7 @@ ol {
   border-radius: 0.5rem;
   margin: 1rem 0rem 5rem 0rem;
   font-size: 1.2rem;
+  font-weight: 600;
   text-align: center;
   color: #02040f;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -388,6 +387,75 @@ strong {
 
 /* MEDIA QUERIES */
 
-/* Tablet styles - 800 is typical tablet width, 300-400 for phone */
+/* Portrait tablet styles */
+
+@media screen and (min-width: 500px) {
+  header > a {
+    width: 15%;
+  }
+  header nav {
+    width: 85%;
+  }
+  #social-links nav {
+    width: 60%;
+  }
+  .content {
+    padding: 1.5rem 4.5rem;
+  }
+  .profile {
+    width: 40%;
+  }
+  .abstract {
+    width: 65%;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header > a {
+    width: 10%;
+  }
+  header nav {
+    width: 90%;
+  }
+  #social-links nav {
+    width: 50%;
+  }
+  .content {
+    padding: 1.5rem 5.5rem;
+  }
+  .abstract {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  main h2 {
+    margin: 3rem 0rem;
+  }
+  .blog-1,
+  .blog-2,
+  .blog-3,
+  .blog-4,
+  .blog-5 {
+    width: 30rem;
+    height: 15rem;
+    margin: 0rem 0rem 4rem 0rem;
+  }
+  #social-links nav {
+    width: 40%;
+  }
+  .blog-image {
+    width: 75%;
+    border-radius: 1rem;
+  }
+  .content {
+    padding: 1.5rem 8rem;
+  }
+  .profile {
+    width: 35%;
+  }
+}
+
+/* Landscape tablet styles */
 
 /* Desktop styles */
