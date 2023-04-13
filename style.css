@@ -23,7 +23,6 @@ body {
 
 #hero h1 {
   margin: 12rem 0rem 0rem;
-  padding: 0rem 1rem;
   font-size: 3rem;
   font-family: "Source Code Pro", Courier, monospace;
   animation: 10s infinite alternate color-cycle;
@@ -175,11 +174,12 @@ footer {
   background-size: cover;
   background-color: grey;
   background-blend-mode: multiply;
+  height: 80vh;
 }
 
 #hero h2 {
   margin: 1rem 0rem 0rem 0rem;
-  padding: 1rem;
+  padding: 1rem 0rem;
   color: #fefcfb;
   text-align: center;
   border-radius: 0.5rem;
@@ -190,7 +190,7 @@ footer {
   text-decoration: none;
   padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
-  margin: 1rem 1rem 12rem 1rem;
+  margin: 1rem 0rem 12rem 0rem;
   font-size: 1.2rem;
   font-weight: 600;
   text-align: center;
@@ -470,6 +470,7 @@ strong {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    width: 75%
   }
   
   .blog-1,
@@ -496,4 +497,32 @@ strong {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  header > a {
+    width: 7%;
+  }
+  header nav {
+    width: 93%;
+  }
+  #social-links nav {
+    width: 20%;
+  }
+  #hero {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #hero h1 {
+    margin: 12rem 0rem 0rem 2rem;
+  }
+  #hero h2 {
+    margin: 1rem 0rem 0rem 2rem;
+    text-align: left;
+  }
+  .button {
+    margin: 1rem 1rem 12rem 2rem;
+  }
+  header {
+    padding: 2rem 3rem 2rem 2rem;
+  }
+  
 /* Desktop styles */
