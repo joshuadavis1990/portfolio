@@ -41,6 +41,14 @@ h4 {
   font-size: 0.8rem;
 }
 
+aside {
+  color: hsl(300, 62%, 68%);
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 2rem 1.5rem;
+  padding: 2rem;
+}
+
 /* UNIVERSAL STYLING */
 
 /* Header component */
@@ -174,7 +182,7 @@ footer {
   background-size: cover;
   background-color: grey;
   background-blend-mode: multiply;
-  height: 80vh;
+  height: 95vh;
 }
 
 #hero h2 {
@@ -326,8 +334,15 @@ em {
 
 .profile {
   width: 60%;
-  margin: 1rem 0rem 4rem;
+  margin: 1rem 100% 1rem;
   border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dog {
+  width: 30%;
+  margin: 1rem 1rem 4rem;
+  border-radius: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -361,6 +376,15 @@ ol {
 .resume-button:hover {
   background-color: hsl(193, 100%, 35%);
   transition: 400ms;
+}
+
+.about-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 80%;
 }
 
 /* Styling for individual blog pages */
@@ -405,10 +429,13 @@ strong {
   .profile {
     width: 40%;
   }
+  .dog {
+    width: 20%;
+  }
   .abstract {
     width: 65%;
   }
-}
+  }
 
 @media screen and (min-width: 600px) {
   header > a {
@@ -454,6 +481,9 @@ strong {
   .profile {
     width: 35%;
   }
+  .dog {
+    width: 17.5%;
+  }
 }
 
 /* Landscape tablet styles */
@@ -489,6 +519,9 @@ strong {
   }
   .profile {
     width: 25%;
+  }
+  .dog {
+    width: 12.5%;
   }
   .blog-image {
     width: 40%;
@@ -531,6 +564,9 @@ strong {
   .profile {
     width: 20%;
   }
+  .dog {
+    width: 10%;
+  }
   .blog-image {
     width: 30%;
   }
@@ -539,3 +575,24 @@ strong {
   }
 }
 /* Desktop styles */
+
+@media screen and (min-width: 1400px) {
+  header > a {
+    width: 5%;
+  }
+  header nav {
+    width: 95%;
+  }
+  #social-links nav {
+    width: 15%;
+  }
+  aside {
+    margin: 2rem 8rem;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  aside {
+    margin: 2rem 10rem;
+  }
+}
