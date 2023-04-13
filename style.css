@@ -458,4 +458,42 @@ strong {
 
 /* Landscape tablet styles */
 
+@media  screen and (min-width: 1000px) {
+  header > a {
+    width: 8%;
+  }
+  header nav {
+    width: 92%;
+  }
+  .blog-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .blog-1,
+  .blog-2,
+  .blog-3,
+  .blog-4,
+  .blog-5 {
+    width: 15rem;
+    height: 15rem;
+    margin: 0rem 2rem 4rem 2rem;
+  }
+  #social-links nav {
+    width: 30%;
+  }
+  .content {
+    padding: 1.5rem 15rem;
+  }
+  .profile {
+    width: 25%;
+  }
+  .blog-image {
+    width: 40%;
+    border-radius: 1rem;
+  }
+}
+
 /* Desktop styles */
