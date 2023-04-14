@@ -14,7 +14,7 @@ body {
   background-color: #0a1128;
 }
 
-/* FONT STYLING */
+/* FONT AND TEXT STYLING */
 
 * {
   font-family: "Poppins", sans-serif;
@@ -199,6 +199,8 @@ nav a:hover {
   color: #0a1128;
 }
 
+/* Social links size adjustment */
+
 #social-links nav {
   display: flex;
   justify-content: center;
@@ -319,6 +321,8 @@ main {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* Colors and hover effects for blog tiles on home page */
+
 .blog-1 {
   background-color: hsl(209, 95%, 24%);
 }
@@ -365,12 +369,16 @@ main {
 
 /* Styling for About/Work */
 
+/* Profile picture size adjustment */
+
 .profile {
   width: 60%;
   margin: 1rem 100% 1rem;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+/* Dog pictures x2 size adjustment */
 
 .dog {
   width: 30%;
