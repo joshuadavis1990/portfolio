@@ -143,9 +143,6 @@ header {
   background-color: #0a1128;
   padding: 1rem 2rem 1rem 1rem;
   border-bottom: solid 2.5px #1282a2;
-  position: fixed;
-  top: 0;
-  z-index: 1;
 }
 
 /* Logo size adjustment */
@@ -272,7 +269,6 @@ footer {
   background-color: grey;
   background-blend-mode: multiply;
   height: 95vh;
-  margin-top: 3rem;
 }
 
 .button {
@@ -305,10 +301,6 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #fefcfb;
-}
-
-.blog-page {
-  margin-top: 5rem;
 }
 
 .blog-1,
@@ -384,10 +376,6 @@ main {
   margin: 1rem 100% 1rem;
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.page-hero {
-  margin-top: 7rem;
 }
 
 /* Dog pictures x2 size adjustment */
