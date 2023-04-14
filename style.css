@@ -28,17 +28,81 @@ body {
   animation: 10s infinite alternate color-cycle;
 }
 
+.page-hero h1 {
+  color: #fefcfb;
+  text-align: center;
+  margin: 2rem 0rem;
+  font-size: 2rem;
+  color: hsl(300, 62%, 68%);
+}
+
+h1 {
+  margin: 2rem 3rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+#hero h2 {
+  margin: 1rem 0rem 0rem 0rem;
+  padding: 1rem 0rem;
+  color: #fefcfb;
+  text-align: center;
+  border-radius: 0.5rem;
+}
+
 h2 {
+  margin: 2rem 0rem;
   font-size: 1.5rem;
   font-weight: 600;
 }
 
-h3 {
+.content h2 {
+  padding: 0rem 0rem 0rem 1rem;
+}
+
+h3, .abstract {
   font-size: 1.2rem;
 }
 
 h4 {
   font-size: 0.8rem;
+}
+
+main a article h3,
+h4 {
+  color: #fefcfb;
+}
+
+.content p,
+ul,
+li {
+  margin: 1rem;
+  font-family: "Volkhov", "Times", serif;
+  line-height: 1.7;
+}
+
+.content a,
+em {
+  font-family: "Volkhov", "Times", serif;
+}
+
+.content a {
+  color: #1282a2;
+  text-decoration: none;
+}
+
+.content a:visited {
+  color: #1282a2;
+}
+
+ul {
+  list-style: inside;
+  margin: 0;
+  padding: 0;
+}
+
+ol {
+  list-style: none;
 }
 
 aside {
@@ -47,6 +111,26 @@ aside {
   font-style: italic;
   margin: 2rem 1.5rem;
   padding: 2rem;
+}
+
+strong {
+  font-weight: 600;
+  color: #1282a2;
+}
+
+.abstract {
+  text-align: center;
+  width: 75%;
+}
+
+.author {
+  color: #0a1128;
+  font-size: 0.8rem;
+  padding: 1rem 0rem 2rem;
+}
+
+.content {
+  padding: 1rem 2rem;
 }
 
 /* UNIVERSAL STYLING */
@@ -185,14 +269,6 @@ footer {
   height: 95vh;
 }
 
-#hero h2 {
-  margin: 1rem 0rem 0rem 0rem;
-  padding: 1rem 0rem;
-  color: #fefcfb;
-  text-align: center;
-  border-radius: 0.5rem;
-}
-
 .button {
   background-color: hsl(193, 80%, 35%);
   text-decoration: none;
@@ -225,10 +301,6 @@ main {
   background-color: #fefcfb;
 }
 
-main h2 {
-  margin: 2rem 0rem;
-}
-
 .blog-1,
 .blog-2,
 .blog-3,
@@ -245,11 +317,6 @@ main h2 {
   text-decoration: none;
   transition: 400ms;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-main a article h3,
-h4 {
-  color: #fefcfb;
 }
 
 .blog-1 {
@@ -298,40 +365,6 @@ h4 {
 
 /* Styling for About/Work */
 
-.page-hero h1 {
-  color: #fefcfb;
-  text-align: center;
-  padding: 1rem 0rem 1rem;
-  font-size: 2rem;
-}
-
-.content h2 {
-  padding: 0rem 0rem 0rem 1rem;
-}
-
-.content {
-  padding: 1.5rem 2rem;
-}
-
-.content p,
-ul,
-li {
-  margin: 1rem;
-  font-family: "Volkhov", "Times", serif;
-  line-height: 1.7;
-}
-
-.content a,
-em {
-  font-family: "Volkhov", "Times", serif;
-  padding: 0;
-}
-
-.content a {
-  color: #1282a2;
-  text-decoration: none;
-}
-
 .profile {
   width: 60%;
   margin: 1rem 100% 1rem;
@@ -344,20 +377,6 @@ em {
   margin: 1rem 1rem 4rem;
   border-radius: 25%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.content a:visited {
-  color: #1282a2;
-}
-
-ul {
-  list-style: inside;
-  margin: 0;
-  padding: 0;
-}
-
-ol {
-  list-style: none;
 }
 
 .resume-button {
@@ -396,22 +415,6 @@ ol {
 }
 
 /* Styling for individual blog pages */
-
-strong {
-  font-weight: 600;
-  color: #1282a2;
-}
-
-.abstract {
-  text-align: center;
-  width: 75%;
-}
-
-.author {
-  color: #0a1128;
-  font-size: 0.8rem;
-  padding: 1rem 0rem 2rem;
-}
 
 .blog-image {
   width: 100%;
