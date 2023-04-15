@@ -21,7 +21,7 @@ body {
 /* FONT AND TEXT STYLING */
 
 * {
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins", Arial, sans-serif;
   font-weight: 400;
 }
 
@@ -130,7 +130,11 @@ aside {
   padding: 2rem;
 }
 
-strong {
+pre {
+  font-family: "Source Code Pro", Courier, monospace;
+}
+
+strong, .reference {
   font-weight: 600;
   color: #1282a2;
 }
@@ -168,8 +172,6 @@ header {
   z-index: 1;
 }
 
-/* Logo size adjustment */
-
 header > a {
   width: 80px;
   flex-shrink: 0;
@@ -180,8 +182,6 @@ header > a {
   width: 100%;
   object-fit: contain;
 }
-
-/* Nav bar size adjustment */
 
 header nav {
   display: flex;
@@ -221,8 +221,6 @@ nav a:hover {
   font-size: 1.5rem;
   color: #0a1128;
 }
-
-/* Social links size adjustment */
 
 #social-links nav {
   display: flex;
@@ -395,16 +393,11 @@ main {
 
 /* Styling for About/Work */
 
-/* Profile picture size adjustment */
-
 .profile {
   width: 60%;
-  /* margin: 1rem 100% 1rem; */
   border-radius: 50%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-
-/* Dog pictures x2 size adjustment */
 
 .dog {
   width: 30%;
@@ -432,11 +425,6 @@ main {
 }
 
 .about-photos {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: center; */
-  /* align-items: center; */
-  /* flex-wrap: wrap; */
   width: 80%;
 }
 
@@ -507,9 +495,6 @@ main {
   .content {
     padding: 1.5rem 8rem;
   }
-  .profile {
-    /* width: 35%; */
-  }
   .dog {
     width: 17.5%;
   }
@@ -536,9 +521,6 @@ main {
   }
   .content {
     padding: 1.5rem 15rem;
-  }
-  .profile {
-    /* width: 25%; */
   }
   .dog {
     width: 12.5%;
@@ -571,9 +553,6 @@ main {
   }
   .content {
     padding: 1.5rem 25rem;
-  }
-  .profile {
-    /* width: 20%; */
   }
   .dog {
     width: 10%;
