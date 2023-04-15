@@ -10,6 +10,10 @@
   padding: 0;
 }
 
+:root {
+  --nav-height: 5rem;
+}
+
 body {
   background-color: #0a1128;
 }
@@ -28,12 +32,25 @@ body {
   animation: 10s infinite alternate color-cycle;
 }
 
+.page-hero {
+  margin-top: var(--nav-height);
+  padding: 2rem 0rem;
+}
+
 .page-hero h1 {
   color: #fefcfb;
   text-align: center;
-  margin: 2rem 0rem;
   font-size: 2rem;
   color: hsl(300, 62%, 68%);
+  margin: 0;
+}
+
+.blog-hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--nav-height);
 }
 
 h1 {
@@ -138,21 +155,28 @@ strong {
 /* Header component */
 
 header {
+  position: fixed;
+  top: 0;
   display: flex;
   width: 100%;
   background-color: #0a1128;
-  padding: 1rem 2rem 1rem 1rem;
   border-bottom: solid 2.5px #1282a2;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: var(--nav-height);
+  z-index: 1;
 }
 
 /* Logo size adjustment */
 
 header > a {
-  display: flex;
-  width: 25%;
+  width: 80px;
+  flex-shrink: 0;
 }
 
 #logo {
+  display: block;
   width: 100%;
   object-fit: contain;
 }
@@ -163,7 +187,6 @@ header nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 75%;
 }
 
 header nav a {
@@ -204,24 +227,24 @@ nav a:hover {
 #social-links nav {
   display: flex;
   justify-content: center;
-  width: 80%;
   margin: 0rem 0rem 3rem;
+  gap: 1rem;
 }
 
 #social-links a {
   display: flex;
-  justify-content: center;
-  width: 20%;
+  align-items: center;
+  width: 2.25rem;
 }
 
 #social-links img {
-  width: 60%;
+  width: 100%;
   object-fit: contain;
-  filter: invert(10%);
+  opacity: 0.75;
 }
 
 #social-links img:hover {
-  filter: invert(0%);
+  opacity: 1;
   transition: 200ms;
 }
 
@@ -267,10 +290,11 @@ footer {
   align-items: center;
   background-image: url(images/hero.jpg);
   background-size: cover;
-  background-color: grey;
+  background-color: hsla(0, 0%, 0%, 50%);
   background-blend-mode: multiply;
-  height: 95vh;
-  padding: 0 2rem;
+  min-height: calc(100vh - var(--nav-height));
+  margin-top: var(--nav-height);
+  padding: 2rem;
 }
 
 .button {
@@ -421,7 +445,7 @@ main {
   justify-content: center;
 }
 
-.boxed-text div {
+.boxed-text > div {
   background-color: hsl(226, 1%, 93%);
   margin: 1rem 1rem 2rem;
   padding: 0.1rem;
@@ -440,15 +464,6 @@ main {
 /* Portrait tablet styles */
 
 @media screen and (min-width: 500px) {
-  header > a {
-    width: 15%;
-  }
-  header nav {
-    width: 85%;
-  }
-  #social-links nav {
-    width: 60%;
-  }
   .content {
     padding: 1.5rem 4.5rem;
   }
@@ -464,15 +479,6 @@ main {
   }
 
 @media screen and (min-width: 600px) {
-  header > a {
-    width: 10%;
-  }
-  header nav {
-    width: 90%;
-  }
-  #social-links nav {
-    width: 50%;
-  }
   .content {
     padding: 1.5rem 5.5rem;
   }
@@ -494,9 +500,6 @@ main {
     height: 15rem;
     margin: 0rem 0rem 4rem 0rem;
   }
-  #social-links nav {
-    width: 40%;
-  }
   .blog-image {
     width: 75%;
     border-radius: 1rem;
@@ -515,12 +518,6 @@ main {
 /* Landscape tablet styles */
 
 @media screen and (min-width: 1000px) {
-  header > a {
-    width: 8%;
-  }
-  header nav {
-    width: 92%;
-  }
   .blog-cards {
     display: flex;
     flex-direction: row;
@@ -536,9 +533,6 @@ main {
     width: 15rem;
     height: 15rem;
     margin: 0rem 2rem 4rem 2rem;
-  }
-  #social-links nav {
-    width: 30%;
   }
   .content {
     padding: 1.5rem 15rem;
@@ -558,14 +552,8 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-  header > a {
-    width: 7%;
-  }
-  header nav {
-    width: 93%;
-  }
-  #social-links nav {
-    width: 20%;
+  #social-links a {
+    width: 1.75rem;
   }
   #hero {
     justify-content: center;
@@ -580,9 +568,6 @@ main {
   }
   .button {
     margin: 0;
-  }
-  header {
-    padding: 1rem 2rem 1rem 2rem;
   }
   .content {
     padding: 1.5rem 25rem;
@@ -603,15 +588,6 @@ main {
 /* Desktop styles */
 
 @media screen and (min-width: 1400px) {
-  header > a {
-    width: 5%;
-  }
-  header nav {
-    width: 95%;
-  }
-  #social-links nav {
-    width: 15%;
-  }
   aside {
     margin: 2rem 8rem;
   }
